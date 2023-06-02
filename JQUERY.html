@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+          $("#flip").click(function(){
+            $("#panel").slideDown("slow");
+          });
+        });
+        </script>
+        <style> 
+        #panel, #flip {
+          padding: 5px;
+          text-align: center;
+          background-color: #e5eecc;
+          border: solid 1px #c3c3c3;
+        }
+        
+        #panel {
+          padding: 50px;
+          display: none;
+        }
+        </style>
+</head>
+<body>
+    <div class="container"> 
+        <h1 class="heading" id="heading"> hello JQUERY</h1>
+        <p class="desc">lorem.......</p>
+        <strong id="price" data-price="1290000">1290000</strong>
+        <form action=""id="myform">
+            <input id="username" type="text" name="username">
+            <input  id="password" type="text" name="password">
+            <button class="button" id="btnlogin">login</button>
+        </form>
+        <hr>
+        <form action="" method="post">
+            <input type="text" name="username">
+            <input  type="text" name="password">
+            <button type="submit">login</button>
+        </form>
+        <div>
+            <button class="tonglecontent">
+                <li>categoria1</li>
+                <li>categoria2</li>
+                <li>categoria3</li>
+                <li>categoria4</li>
+       </button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
+    <script>
+        let heading = $(".heading").text();
+        let price= $("strong#price").data('price');
+        let price_2= $("strong#price").attr('data_price');
+        console.log(price, price_2 );
+        $("desc").empty();
+
+   </script>   
+    
+    <div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+</body>
+</html>

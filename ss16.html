@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *root {
+      --main-color: #08c;
+    }
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: 0;
+      outline: none;
+    }
+    ul,
+    ol {
+      list-style: none;
+    }
+    .d-flex {
+      display: flex;
+    }
+    .body {
+    }
+    .header-middle {
+      background-color: var(--main-color);
+    }
+    .a {
+    }
+    .header-middle-container {
+      justify-content: space-between;
+      padding: 10px 0;
+      align-items: center;
+      column-gap: 100px;
+    }
+    .header-middle-container .logo {
+      width: 200px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 32px;
+    }
+    .main-navigatinon {
+      flex: 1;
+    }
+    .main-navigatinon > ul {
+      column-gap: 15px;
+    }
+    footer {
+      background-color: #212121;
+      padding: 40px 0 20px;
+      color: #777;
+    }
+    footer .footer-col {
+      flex: 1;
+      width: 25%;
+    }
+    main {
+      margin: 30px 0;
+    }
+    main aside {
+      width: 280p;
+      border: 1px solid #ddd;
+    }
+    main .main-container {
+      justify-content: space-between;
+    }
+    main .main-content {
+      width: calc(100% - 280 + 20px);
+    }
+    main.products-wrapper {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    main.producs-wrapper .item {
+      width: calc((100%-40px) / 3);
+      min-height: 300px;
+      display: flex;
+      justify-content: center;
+      color: #111;
+      font-weight: bold;
+      background-color: #b8b8b8;
+    }
+    @media screen and (max-width: 769px) {
+      .container {
+        width: 100%;
+        padding: 0 10px;
+      }
+      main aside {
+        display: none;
+      }
+      .main .main-container {
+        width:100% ;
+      }  
+        footer.footer-container{
+        flex-wrap: wrap;
+    }  footer.footer-col{
+        width: 50%;
+    }
+    }
+    @media screen and (max-width: 426px){
+        
+    }
+    
+    
+  
+  </style>
+  <body>
+    <header>
+      <div class="header-middle">
+        <div class="header-middle-container d-flex">
+          <div class="logo">
+            <nav class="main-navigation">
+              <ul>
+                <li><a href="javascrip:;">home</a></li>
+                <li><a href="javascrip:;">home</a></li>
+                <li><a href="javascrip:;">home</a></li>
+                <li><a href="javascrip:;">home</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <ul>
+          <li>categories 1</li>
+          <li>categories 2</li>
+          <li>categories 3</li>
+          <li>categories 4</li>
+        </ul>
+      </aside>
+      <div class="main-container">
+        <div class="producs-wrapper d-flex">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-container d-flex">
+          <div class="footer-col">col 1</div>
+          <div class="footer-col">col 2</div>
+          <div class="footer-col">col 3</div>
+          <div class="footer-col">col 4</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

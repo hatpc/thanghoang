@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .btn-primary{
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+   
+    <canvas id="mCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    <script>
+      window.onload = function () {
+      var canvas = document.getElementById('mCanvas');
+      var ctext = canvas.getContext('2d');
+      // vẽ 1 hình chữ nhật tại tọa độ 18, 55, 
+    //   ctext.beginPath();
+    //   ctext.rect(18, 50, 200, 100);
+    //   ctext.fillStyle = "orange";
+    //   ctext.fill();
+     
+      ctext.beginPath();
+      ctext.moveTo(300, 150);
+      ctext.lineTo(500, 50);
+      ctext.lineWidth = 4;
+      ctext.strokeStyle = "red";
+      ctext.stroke(); }
+
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="">hoang anh thang</button>
+<button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">hoang anh thang</button>
+<button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">hoang anh thang</button>
+    </div>
+  </body>
+</html>
